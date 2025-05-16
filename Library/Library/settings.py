@@ -18,8 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'books',
-    'custom_auth'
+    'Library.books',
+    'Library.custom_auth',
 ]
 
 MIDDLEWARE = [
