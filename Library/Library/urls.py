@@ -4,8 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('api/', include('books.urls')),
-    path('auth/', include('custom_auth.urls')),
+    path('api/', include('Library.books.urls')),
+    path('auth/', include('Library.custom_auth.urls')),
     path('admin/', admin.site.urls)
 ]
 
