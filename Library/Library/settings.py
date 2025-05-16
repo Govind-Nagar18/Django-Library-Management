@@ -38,8 +38,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5174'
 ]
 
+ROOT_URLCONF = 'Library.Library.urls'
 
-ROOT_URLCONF = 'Library.urls'
 
 # postgresql://library_website_database_user:iuZ6X2XUDLvUFMS8reEunDOpm0ORlYXk@dpg-d0jgoemuk2gs73bsh4mg-a/library_website_database
 
