@@ -8,6 +8,7 @@ CORS_ALLOW_ALL_ORIGINS = ['https://'+os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 
 DEBUG = False
 SECRET_KEY = os.environ.get('SECRET_KEY')
+# 848bd3366795877bf05dca1517cec621
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -22,7 +23,11 @@ MIDDLEWARE = [
 ]
 
 
-# CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:5173/',
+#     'http://localhost:5174/'
+# ]
+
 
 STORAGES = {
     'default': {
