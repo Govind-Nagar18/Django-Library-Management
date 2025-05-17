@@ -3,12 +3,18 @@ import dj_database_url
 from .settings import *
 from .settings import BASE_DIR
 
-ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
+RENDER_HOST = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+
+ALLOWED_HOSTS = ['django-library-management-g5rl.onrender.com']
+
+if RENDER_HOST:
+    ALLOWED_HOSTS.append(RENDER_HOST)
+
+# ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 CORS_ALLOWED_ORIGINS = ['https://'+os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 
 DEBUG = False
 SECRET_KEY = os.environ.get('SECRET_KEY')
-# 848bd3366795877bf05dca1517cec621
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -23,7 +29,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://library-website-react.onrender.com'
+    'https://django-library-management-g5rl.onrender.com'
 ]
 
 
