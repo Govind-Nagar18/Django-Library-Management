@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Library.wsgi.application'
+WSGI_APPLICATION = 'Library.Library.wsgi.application'
 
 DATABASES = {
     'default': {
