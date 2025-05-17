@@ -3,7 +3,9 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
+    path("", ({"message": "Backend is running ✅"})),
     path('api/', include('Library.books.urls')),
     path('auth/', include('Library.custom_auth.urls')),
     path('admin/', admin.site.urls)
