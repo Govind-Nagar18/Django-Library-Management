@@ -23,7 +23,9 @@ MIDDLEWARE = [
 ]
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    'https://library-website-react.onrender.com'
+]
 
 
 
