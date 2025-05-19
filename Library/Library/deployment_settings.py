@@ -5,13 +5,9 @@ from .settings import BASE_DIR
 
 RENDER_HOST = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
-ALLOWED_HOSTS = ["https://django-library-management-g5rl.onrender.com/"]
-
+ALLOWED_HOSTS = ["django-library-management-g5rl.onrender.com"]
 if RENDER_HOST:
     ALLOWED_HOSTS.append(RENDER_HOST)
-
-# ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
-CORS_ALLOWED_ORIGINS = ['https://'+os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
 
 DEBUG = False
 SECRET_KEY = os.environ.get('SECRET_KEY')
@@ -29,9 +25,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://django-library-management-g5rl.onrender.com"
+    "https://library-website-react.onrender.com"  # ✅ Add your frontend URL here!
 ]
-
 
 STORAGES = {
     'default': {
