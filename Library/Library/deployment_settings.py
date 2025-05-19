@@ -29,7 +29,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://django-library-management-g5rl.onrender.com'
+    "https://django-library-management-g5rl.onrender.com"
 ]
 
 

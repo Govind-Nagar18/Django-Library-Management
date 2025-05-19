@@ -35,6 +35,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://django-library-management-g5rl.onrender.com",
 ]
 
 ROOT_URLCONF = 'Library.Library.urls'
