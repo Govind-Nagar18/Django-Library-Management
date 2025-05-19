@@ -5,7 +5,7 @@ from .settings import BASE_DIR
 
 RENDER_HOST = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
-ALLOWED_HOSTS = ['django-library-management-g5rl.onrender.com']
+ALLOWED_HOSTS = ["https://django-library-management-g5rl.onrender.com/"]
 
 if RENDER_HOST:
     ALLOWED_HOSTS.append(RENDER_HOST)
