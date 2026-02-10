@@ -25,7 +25,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://library-website-react.onrender.com"  # ✅ Add your frontend URL here!
+    "https://library-website-react.onrender.com" 
 ]
 
 STORAGES = {
