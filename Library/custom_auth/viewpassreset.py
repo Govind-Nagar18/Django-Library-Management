@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework import status
 import random
 
-# ⬇️ 1. Send OTP
+# Send OTP
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def Send_reset_otp(request):
@@ -32,7 +32,7 @@ def Send_reset_otp(request):
     return Response({'message': 'OTP sent to your email'}, status=status.HTTP_200_OK)
 
 
-# ⬇️ 2. Verify OTP
+# Verify OTP
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def Verify_reset_otp(request):
@@ -46,7 +46,7 @@ def Verify_reset_otp(request):
     return Response({'message': 'OTP verified. You can now reset your password.'}, status=status.HTTP_200_OK)
 
 
-# ⬇️ 3. Reset Password
+# Reset Password
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def Reset_password(request):
