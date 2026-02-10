@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from django.http import JsonResponse 
 
 urlpatterns = [
-    path("", lambda request: JsonResponse({"message": "Backend is running ✅"})), 
+    path("", lambda request: JsonResponse({"message": "Backend is running"})), 
     path('api/', include('Library.books.urls')),
     path('auth/', include('Library.custom_auth.urls')),
     path('admin/', admin.site.urls),
